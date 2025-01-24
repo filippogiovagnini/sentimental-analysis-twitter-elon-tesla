@@ -18,13 +18,13 @@ The dataset consists of Twitter posts related to **"Elon"** and **"Tesla"** from
 
 ## Technical Requirements
 
-You are encouraged to use any Python tools or libraries you prefer. Below are some recommendations:
+Below are some libraries I considered:
 
 - **Visualization:** 
   - [Matplotlib](https://matplotlib.org/)
   - [Seaborn](https://seaborn.pydata.org/)
   - [Plotly](https://plotly.com/)
-- **Sentiment Analysis (Optional):** 
+- **Sentiment Analysis:** 
   - [NLTK](https://www.nltk.org/)
   - [TextBlob](https://textblob.readthedocs.io/en/dev/)
   - [BERT](https://github.com/google-research/bert)
