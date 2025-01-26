@@ -16,7 +16,7 @@ def sentiment_analysis_bert(text):
     result = model(tokens)
     return int(torch.argmax(result.logits[0])) + 1
 
-def cleantwt (twt):
+def cleantwt(twt):
   emoj = re.compile("["
         u"\U0001F600-\U0001F64F"  # emoticons
         u"\U0001F300-\U0001F5FF"  # symbols & pictographs
