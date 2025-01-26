@@ -1,5 +1,7 @@
 # sentimental-analysis-twitter-elon-tesla
 
+PLEASE SEE THE FILE final_report.ipynb
+
 ## Dataset
 
 The dataset consists of Twitter posts related to **"Elon"** and **"Tesla"** from **April 1, 2023, to June 30, 2023**.
