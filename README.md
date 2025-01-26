@@ -1,6 +1,6 @@
 # sentimental-analysis-twitter-elon-tesla
 
-PLEASE SEE THE FILE final_report.ipynb
+# PLEASE SEE THE FILE final_report.ipynb
 
 ## Dataset
 
