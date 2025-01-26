@@ -1,16 +1,20 @@
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
 import torch
 import requests
 from bs4 import BeautifulSoup
 import re
+import numpy as np
 
 tokenizer = AutoTokenizer.from_pretrained("nlptown/bert-base-multilingual-uncased-sentiment")
 model = AutoModelForSequenceClassification.from_pretrained("nlptown/bert-base-multilingual-uncased-sentiment")
 
+device = torch.device("cuda:0")
+model = model.to(device)
+
 def sentiment_analysis_bert(text):
-    tokens = tokenizer.encode(text, return_tensors="pt")
+    tokens = tokenizer.encode(text, return_tensors="pt").to(device)
     result = model(tokens)
-    return int(torch.argmax(result.logits)) + 1
+    return int(torch.argmax(result.logits[0])) + 1
 
 def cleantwt (twt):
   emoj = re.compile("["
