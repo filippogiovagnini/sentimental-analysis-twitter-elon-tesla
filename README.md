@@ -1,6 +1,6 @@
 # sentimental-analysis-twitter-elon-tesla
 
-# PLEASE SEE THE FILE final_report.ipynb
+# This project has been done for Aleta Index, therefore the access to the actual code is restricted. Ask me for the password to access the code if interested.
 
 ## Dataset
 
